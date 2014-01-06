@@ -287,7 +287,7 @@ The following dependencies are defined:
     </tr>
     <tr>
         <td>Spring</td>
-        <td><tt>org.springframework:spring-core</tt><tt>org.springframework:spring-expression</tt><tt>org.springframework:spring-aop</tt><tt>org.springframework:spring-context</tt><tt>org.springframework:spring-context-support</tt><tt>org.springframework:spring-tx</tt><tt>org.springframework:spring-jdbc</tt><tt>org.springframework:spring-orm</tt><tt>org.springframework:spring-oxm</tt><tt>org.springframework:spring-web</tt><tt>org.springframework:spring-webmvc</tt></td>
+        <td><tt>org.springframework:spring-core</tt><p/><tt>org.springframework:spring-expression</tt><p/><tt>org.springframework:spring-aop</tt><p/><tt>org.springframework:spring-context</tt><p/><tt>org.springframework:spring-context-support</tt><p/><tt>org.springframework:spring-tx</tt><p/><tt>org.springframework:spring-jdbc</tt><p/><tt>org.springframework:spring-orm</tt><p/><tt>org.springframework:spring-oxm</tt><p/><tt>org.springframework:spring-web</tt><p/><tt>org.springframework:spring-webmvc</tt></td>
         <td><tt>dep.spring.version</tt></td>
     </tr>
 </table>
