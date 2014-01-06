@@ -9,7 +9,7 @@
     <name>asf-base-pom</name>
     <description>Parent POM for ASF java projects that should be distributed through the central Maven repository.</description>
     
-    <url>http://maven.apache.org</url>
+    <url>http://git.oschina.net/asf/asf-base-pom.git</url>
     <inceptionYear>2014</inceptionYear>
 
     <licenses>
@@ -81,6 +81,7 @@
         <dep.objenesis.version>2.1</dep.objenesis.version>
         <!-- spring -->
         <dep.spring.version>3.2.1.RELEASE</dep.spring.version>
+        <dep.unitils.version>3.3</dep.unitils.version>
     </properties>
     
     <!-- The following dependency should be the same everywhere. -->
@@ -298,6 +299,11 @@
                 <groupId>org.objenesis</groupId>
                 <artifactId>objenesis</artifactId>
                 <version>${dep.objenesis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.unitils</groupId>
+                <artifactId>unitils</artifactId>
+                <version>${dep.unitils.version}</version>
             </dependency>
             
             <!-- spring -->

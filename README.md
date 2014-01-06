@@ -174,110 +174,120 @@ pick up a version from the Asf Base POM.
 The following dependencies are defined:
 
 <table>
-  <tr><th>Dependency name</th><th>Group/Artifact Ids</th><th>property</th></tr>
-  <tr>
-   <td>Google Guice</td>
-   <td><tt>com.google.inject:guice</tt><p/><tt>com.google.inject.extensions:guice-servlet</tt><p/><tt>com.google.inject.extensions:guice-assistedinject</tt><p/><tt>com.google.inject.extensions:guice-multibindings</tt><p/><tt>com.google.inject.extensions:guice-throwingproviders</tt></td>
-   <td><tt>dep.guice.version</tt></td>
-  </tr>
-  <tr>
-   <td>Google Guava</td>
-   <td><tt>com.google.guava:guava</tt></td>
-   <td><tt>dep.guava.version</tt></td>
-  </tr>
-  <tr>
-    <td>Joda Time</td>
-    <td><tt>joda-time:joda-time</tt></td>
-   <td><tt>dep.joda.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons Lang 3</td>
-    <td><tt>org.apache.commons:commons-lang3</tt></td>
-    <td><tt>dep.commons-lang3.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons Lang</td>
-    <td><tt>commons-lang:commons-lang</tt></td>
-    <td><tt>dep.commons-lang.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons Configuratio</td>
-    <td><tt>commons-configuration:commons-configuration</tt></td>
-    <td><tt>dep.commons-configuration.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons Codec</td>
-    <td><tt>commons-codec:commons-codec</tt></td>
-    <td><tt>dep.commons-codec.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons Collections</td>
-    <td><tt>commons-collections:commons-collections</tt></td>
-    <td><tt>dep.commons-collections.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons IO</td>
-    <td><tt>commons-io:commons-io</tt></td>
-    <td><tt>dep.commons-io.version</tt></td>
-  </tr>
-  <tr>
-    <td>Apache Commons Beanutils</td>
-    <td><tt>commons-beanutils:commons-beanutils</tt></td>
-    <td><tt>dep.commons-beanutils.version</tt></td>
-  </tr>
-  <tr>
-    <td>Java Inject API</td>
-    <td><tt>javax.inject:javax.inject</tt></td>
-    <td><tt>dep.javax-inject.version</tt></td>
-  </tr>
-  <tr>
-    <td>Java Servlet API</td>
-    <td><tt>javax.servlet:javax.servlet-api</tt></td>
-    <td><tt>dep.javax-servlet.version</tt></td>
-  </tr>
-  <tr>
-    <td>slf4j (Simple Logging Facade for Java)</td>
-    <td><tt>org.slf4j:slf4j-api</tt><p/><tt>org.slf4j:slf4j-jcl</tt><p/><tt>org.slf4j:slf4j-jdk14</tt><p/><tt>org.slf4j:slf4j-log4j12</tt><p/><tt>org.slf4j:slf4j-nop</tt><p/><tt>org.slf4j:slf4j-simple</tt><p/><tt>org.slf4j:slf4j-ext</tt><p/><tt>org.slf4j:jcl-over-slf4j</tt><p/><tt>org.slf4j:jul-to-slf4j</tt><p/><tt>org.slf4j:log4j-over-slf4j</tt></td>
-    <td><tt>dep.slf4j.version</tt></td>
-  </tr>
-  <tr>
-    <td>Logback</td>
-    <td><tt>ch.qos.logback:logback-core</tt><p/><tt>ch.qos.logback:logback-classic</tt></td>
-    <td><tt>dep.logback.version</tt></td>
-  </tr>
-  <tr>
-    <td>log4j</td>
-    <td><tt>log4j:log4j</tt></td>
-    <td><tt>dep.log4j.version</tt></td>
-  </tr>
-  <tr>
-    <td>Findbugs Annotations</td>
-    <td><tt>com.google.code.findbugs:annotations</tt></td>
-    <td><tt>dep.findbugs-annotations.version</tt></td>
-  </tr>
-  <tr>
-    <td>JUnit testing</td>
-    <td><tt>junit:junit-dep</tt></td>
-    <td><tt>dep.junit.version</tt></td>
-  </tr>
-  <tr>
-    <td>TestNG testing</td>
-    <td><tt>org.testng:testng</tt></td>
-    <td><tt>dep.testng.version</tt></td>
-  </tr>
-   <tr>
-    <td>Easymock Mocking framework</td>
-    <td><tt>org.easymock:easymock</tt></td>
-    <td><tt>dep.easymock.version</tt></td>
-  </tr>
-  <tr>
-    <td>Hamcrest matchers</td>
-    <td><tt>org.hamcrest:hamcrest-core</tt><p/><tt>org.hamcrest:hamcrest-library</tt></td>
-    <td><tt>dep.hamcrest.version</tt></td>
-  </tr>
-  <tr>
-    <td>Objenesis</td>
-    <td><tt>org.objenesis:objenesis</tt></td>
-    <td><tt>dep.objenesis.version</tt></td>
-  </tr>
+    <tr><th>Dependency name</th><th>Group/Artifact Ids</th><th>property</th></tr>
+    <tr>
+       <td>Google Guice</td>
+       <td><tt>com.google.inject:guice</tt><p/><tt>com.google.inject.extensions:guice-servlet</tt><p/><tt>com.google.inject.extensions:guice-assistedinject</tt><p/><tt>com.google.inject.extensions:guice-multibindings</tt><p/><tt>com.google.inject.extensions:guice-throwingproviders</tt></td>
+       <td><tt>dep.guice.version</tt></td>
+    </tr>
+    <tr>
+       <td>Google Guava</td>
+       <td><tt>com.google.guava:guava</tt></td>
+       <td><tt>dep.guava.version</tt></td>
+    </tr>
+    <tr>
+        <td>Joda Time</td>
+        <td><tt>joda-time:joda-time</tt></td>
+        <td><tt>dep.joda.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons Lang 3</td>
+        <td><tt>org.apache.commons:commons-lang3</tt></td>
+        <td><tt>dep.commons-lang3.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons Lang</td>
+        <td><tt>commons-lang:commons-lang</tt></td>
+        <td><tt>dep.commons-lang.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons Configuratio</td>
+        <td><tt>commons-configuration:commons-configuration</tt></td>
+        <td><tt>dep.commons-configuration.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons Codec</td>
+        <td><tt>commons-codec:commons-codec</tt></td>
+        <td><tt>dep.commons-codec.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons Collections</td>
+        <td><tt>commons-collections:commons-collections</tt></td>
+        <td><tt>dep.commons-collections.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons IO</td>
+        <td><tt>commons-io:commons-io</tt></td>
+        <td><tt>dep.commons-io.version</tt></td>
+    </tr>
+    <tr>
+        <td>Apache Commons Beanutils</td>
+        <td><tt>commons-beanutils:commons-beanutils</tt></td>
+        <td><tt>dep.commons-beanutils.version</tt></td>
+    </tr>
+    <tr>
+        <td>Java Inject API</td>
+        <td><tt>javax.inject:javax.inject</tt></td>
+        <td><tt>dep.javax-inject.version</tt></td>
+    </tr>
+    <tr>
+        <td>Java Servlet API</td>
+        <td><tt>javax.servlet:javax.servlet-api</tt></td>
+        <td><tt>dep.javax-servlet.version</tt></td>
+    </tr>
+    <tr>
+        <td>slf4j (Simple Logging Facade for Java)</td>
+        <td><tt>org.slf4j:slf4j-api</tt><p/><tt>org.slf4j:slf4j-jcl</tt><p/><tt>org.slf4j:slf4j-jdk14</tt><p/><tt>org.slf4j:slf4j-log4j12</tt><p/><tt>org.slf4j:slf4j-nop</tt><p/><tt>org.slf4j:slf4j-simple</tt><p/><tt>org.slf4j:slf4j-ext</tt><p/><tt>org.slf4j:jcl-over-slf4j</tt><p/><tt>org.slf4j:jul-to-slf4j</tt><p/><tt>org.slf4j:log4j-over-slf4j</tt></td>
+        <td><tt>dep.slf4j.version</tt></td>
+    </tr>
+    <tr>
+        <td>Logback</td>
+        <td><tt>ch.qos.logback:logback-core</tt><p/><tt>ch.qos.logback:logback-classic</tt></td>
+        <td><tt>dep.logback.version</tt></td>
+    </tr>
+    <tr>
+        <td>log4j</td>
+        <td><tt>log4j:log4j</tt></td>
+        <td><tt>dep.log4j.version</tt></td>
+    </tr>
+    <tr>
+        <td>Findbugs Annotations</td>
+        <td><tt>com.google.code.findbugs:annotations</tt></td>
+        <td><tt>dep.findbugs-annotations.version</tt></td>
+    </tr>
+    <tr>
+        <td>JUnit testing</td>
+        <td><tt>junit:junit-dep</tt></td>
+        <td><tt>dep.junit.version</tt></td>
+    </tr>
+    <tr>
+        <td>TestNG testing</td>
+        <td><tt>org.testng:testng</tt></td>
+        <td><tt>dep.testng.version</tt></td>
+    </tr>
+    <tr>
+        <td>Easymock Mocking framework</td>
+        <td><tt>org.easymock:easymock</tt></td>
+        <td><tt>dep.easymock.version</tt></td>
+    </tr>
+    <tr>
+        <td>Hamcrest matchers</td>
+        <td><tt>org.hamcrest:hamcrest-core</tt><p/><tt>org.hamcrest:hamcrest-library</tt></td>
+        <td><tt>dep.hamcrest.version</tt></td>
+    </tr>
+    <tr>
+        <td>Objenesis</td>
+        <td><tt>org.objenesis:objenesis</tt></td>
+        <td><tt>dep.objenesis.version</tt></td>
+    </tr>
+    <tr>
+        <td>Unitils</td>
+        <td><tt>org.unitils:unitils</tt></td>
+        <td><tt>dep.unitils.version</tt></td>
+    </tr>
+    <tr>
+        <td>Spring</td>
+        <td><tt>org.springframework:spring-core</tt><tt>org.springframework:spring-expression</tt><tt>org.springframework:spring-aop</tt><tt>org.springframework:spring-context</tt><tt>org.springframework:spring-context-support</tt><tt>org.springframework:spring-tx</tt><tt>org.springframework:spring-jdbc</tt><tt>org.springframework:spring-orm</tt><tt>org.springframework:spring-oxm</tt><tt>org.springframework:spring-web</tt><tt>org.springframework:spring-webmvc</tt></td>
+        <td><tt>dep.spring.version</tt></td>
+    </tr>
 </table>
