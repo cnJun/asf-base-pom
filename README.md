@@ -138,6 +138,8 @@ This is a sample skeleton pom using the Asf Base POM:
 
 ## Project POM conventions
 
+## Deploy to Maven Central
+
 ## Project Build and Checkers
 
 The Asf Base POM hooks various checkers into the build lifecycle and executes them on each build. 
