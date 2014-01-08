@@ -4,7 +4,7 @@
     
     <groupId>net.my.asf</groupId>
     <artifactId>asf-base-pom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
     <name>asf-base-pom</name>
     <description>Parent POM for ASF java projects that should be distributed through the central Maven repository.</description>
@@ -79,10 +79,18 @@
         <dep.hamcrest.version>1.3</dep.hamcrest.version>
         <dep.mockito.version>1.9.5</dep.mockito.version>
         <dep.objenesis.version>2.1</dep.objenesis.version>
-        
-        <!-- spring -->
-        <dep.spring.version>3.2.1.RELEASE</dep.spring.version>
         <dep.unitils.version>3.3</dep.unitils.version>
+        <dep.spring.version>3.2.1.RELEASE</dep.spring.version>
+        <dep.druid.version>0.2.17</dep.druid.version>
+        <dep.oracle-jdbc.version>10.2.0.1.0</dep.oracle-jdbc.version>
+        <dep.jtds.version>1.2.4</dep.jtds.version>
+        <dep.dubbo.version>2.5.4-SNAPSHOT</dep.dubbo.version>
+        <dep.thrift.version>0.9.1</dep.thrift.version>
+        <dep.nifty.version>0.12.0-SNAPSHOT</dep.nifty.version>
+        <dep.zookeeper.version>3.3.3</dep.zookeeper.version>
+        <dep.zkclient.version>0.1</dep.zkclient.version>
+        <dep.fastjson.version>1.1.8</dep.fastjson.version>
+        <dep.jodd.version>3.4.10</dep.jodd.version>
     </properties>
     
     <!-- The following dependency should be the same everywhere. -->
@@ -362,6 +370,84 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
                 <version>${dep.spring.version}</version>
+            </dependency>
+            
+            <!-- jdbc -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${dep.druid.version}</version>
+            </dependency>
+            <!-- mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=c:\ojdbc14.jar -->
+            <dependency>
+                <groupId>com.oracle</groupId>
+                <artifactId>ojdbc14</artifactId>
+                <version>${dep.oracle-jdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.jtds</groupId>
+                <artifactId>jtds</artifactId>
+                <version>${dep.jtds.version}</version>
+            </dependency>
+            
+            <!-- rpc -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dep.dubbo.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>${dep.thrift.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.facebook.nifty</groupId>
+                <artifactId>nifty-core</artifactId>
+                <version>${dep.nifty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.facebook.nifty</groupId>
+                <artifactId>nifty-client</artifactId>
+                <version>${dep.nifty.version}</version>
+            </dependency>
+            
+            <!-- zk -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${dep.zookeeper.version}</version>
+            </dependency>
+			
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${dep.zkclient.version}</version>
+            </dependency>
+            
+            <!-- json -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${dep.fastjson.version}</version>
+            </dependency>
+            
+            <!-- jodd -->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-core</artifactId>
+                <version>${dep.jodd.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-mail</artifactId>
+                <version>${dep.jodd.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

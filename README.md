@@ -292,4 +292,39 @@ The following dependencies are defined:
         <td><tt>org.springframework:spring-core</tt><p/><tt>org.springframework:spring-expression</tt><p/><tt>org.springframework:spring-aop</tt><p/><tt>org.springframework:spring-context</tt><p/><tt>org.springframework:spring-context-support</tt><p/><tt>org.springframework:spring-tx</tt><p/><tt>org.springframework:spring-jdbc</tt><p/><tt>org.springframework:spring-orm</tt><p/><tt>org.springframework:spring-oxm</tt><p/><tt>org.springframework:spring-web</tt><p/><tt>org.springframework:spring-webmvc</tt></td>
         <td><tt>dep.spring.version</tt></td>
     </tr>
+    <tr>
+        <td>Dubbo</td>
+        <td><tt>com.alibaba:dubbo</tt></td>
+        <td><tt>dep.dubbo.version</tt></td>
+    </tr>
+    <tr>
+        <td>Thrift</td>
+        <td><tt>org.apache.thrift:libthrift</tt></td>
+        <td><tt>dep.thrift.version</tt></td>
+    </tr>
+    <tr>
+        <td>Nifty</td>
+        <td><tt>com.facebook.nifty:nifty-core</tt><p/><tt>com.facebook.nifty:nifty-client</tt></td>
+        <td><tt>dep.nifty.version</tt></td>
+    </tr>
+    <tr>
+        <td>Zookeeper</td>
+        <td><tt>org.apache.zookeeper:zookeeper</tt></td>
+        <td><tt>dep.zookeeper.version</tt></td>
+    </tr>
+    <tr>
+        <td>Zkclient</td>
+        <td><tt>com.github.sgroschupf:zkclient</tt></td>
+        <td><tt>dep.zkclient.version</tt></td>
+    </tr>
+    <tr>
+        <td>Fastjson</td>
+        <td><tt>com.alibaba:fastjson</tt></td>
+        <td><tt>dep.fastjson.version</tt></td>
+    </tr>
+    <tr>
+        <td>Jodd</td>
+        <td><tt>org.jodd:jodd-core</tt><p/><tt>org.jodd:jodd-mail</tt></td>
+        <td><tt>dep.jodd.version</tt></td>
+    </tr>
 </table>
