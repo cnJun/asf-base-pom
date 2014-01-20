@@ -12,6 +12,12 @@
 * 2014-01-08 - add zkclient 0.1
 * 2014-01-08 - add fastjson 1.1.8
 * 2014-01-08 - add jodd 3.4.10
+* 2014-01-08 - add asf-common 0.0.1-SNAPSHOT
+* 2014-01-08 - Upgrade asf-common to 1.0.0 (0.0.1-SNAPSHOT)
+* 2014-01-20 - add velocity 1.7
+* 2014-01-20 - add bouncycastle 147
+* 2014-01-20 - add zip4j 1.3.1
+* 2014-01-20 - add store4j 1.0.1
 
 
 ## Version 1.0

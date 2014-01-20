@@ -327,4 +327,24 @@ The following dependencies are defined:
         <td><tt>org.jodd:jodd-core</tt><p/><tt>org.jodd:jodd-mail</tt></td>
         <td><tt>dep.jodd.version</tt></td>
     </tr>
+    <tr>
+        <td>Velocity</td>
+        <td><tt>org.apache.velocity:velocity</tt></td>
+        <td><tt>dep.velocity.version</tt></td>
+    </tr>
+    <tr>
+        <td>Bouncycastle</td>
+        <td><tt>bouncycastle:bcprov-jdk15</tt><p/><tt>bouncycastle:bcpg-jdk15</tt><p/><tt>bouncycastle:bcmail-jdk15</tt></td>
+        <td><tt>dep.bouncycastle.version</tt></td>
+    </tr>
+    <tr>
+        <td>Zip4j</td>
+        <td><tt>net.lingala.zip4j:zip4j</tt></td>
+        <td><tt>dep.zip4j.version</tt></td>
+    </tr>
+    <tr>
+        <td>Store4j</td>
+        <td><tt>com.taobao.store4j:store4j</tt></td>
+        <td><tt>dep.store4j.version</tt></td>
+    </tr>
 </table>

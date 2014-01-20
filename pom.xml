@@ -2,6 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
+    <!-- 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+     -->
+    
     <groupId>net.my.asf</groupId>
     <artifactId>asf-base-pom</artifactId>
     <version>1.0</version>
@@ -56,7 +64,21 @@
         <!-- Default jvm size for compiler, tests etc. -->
         <asf.build.jvmsize>1024m</asf.build.jvmsize>
         
+        <!-- Plugin versions used in multiple places -->
+        <dep.plugin.surefire.version>2.16</dep.plugin.surefire.version>
+        <dep.plugin.site.version>3.3</dep.plugin.site.version>
+        <dep.plugin.pmd.version>3.0.1</dep.plugin.pmd.version>
+        <dep.plugin.findbugs.version>2.5.3</dep.plugin.findbugs.version>
+        <dep.plugin.jacoco.version>0.6.3.201306030806</dep.plugin.jacoco.version>
+        <dep.plugin.scm.version>1.8.1</dep.plugin.scm.version>
+        <dep.plugin.javadoc.version>2.9.1</dep.plugin.javadoc.version>
+        
+        <!-- used by plugins -->
+        <dep.pmd.version>5.0.5</dep.pmd.version>
+        <dep.findbugs.version>2.0.2</dep.findbugs.version>
+        
         <!-- Dependency versions that should be the same everywhere. -->
+        <dep.asf.version>1.0.0</dep.asf.version>
         <dep.guice.version>3.0</dep.guice.version>
         <dep.guava.version>15.0</dep.guava.version>
         <dep.javax-inject.version>1</dep.javax-inject.version>
@@ -79,7 +101,7 @@
         <dep.hamcrest.version>1.3</dep.hamcrest.version>
         <dep.mockito.version>1.9.5</dep.mockito.version>
         <dep.objenesis.version>2.1</dep.objenesis.version>
-        <dep.unitils.version>3.3</dep.unitils.version>
+        <dep.unitils.version>2.3</dep.unitils.version>
         <dep.spring.version>3.2.1.RELEASE</dep.spring.version>
         <dep.druid.version>0.2.17</dep.druid.version>
         <dep.oracle-jdbc.version>10.2.0.1.0</dep.oracle-jdbc.version>
@@ -87,15 +109,27 @@
         <dep.dubbo.version>2.5.4-SNAPSHOT</dep.dubbo.version>
         <dep.thrift.version>0.9.1</dep.thrift.version>
         <dep.nifty.version>0.12.0-SNAPSHOT</dep.nifty.version>
+        <dep.netty.version>3.7.0.Final</dep.netty.version>
         <dep.zookeeper.version>3.3.3</dep.zookeeper.version>
         <dep.zkclient.version>0.1</dep.zkclient.version>
         <dep.fastjson.version>1.1.8</dep.fastjson.version>
         <dep.jodd.version>3.4.10</dep.jodd.version>
+        <dep.velocity.version>1.7</dep.velocity.version>
+        <dep.bouncycastle.version>147</dep.bouncycastle.version>
+        <dep.zip4j.version>1.3.1</dep.zip4j.version>
+        <dep.store4j.version>1.0.1</dep.store4j.version>
     </properties>
     
     <!-- The following dependency should be the same everywhere. -->
     <dependencyManagement>
         <dependencies>
+            <!-- ASF -->
+            <dependency>
+                <groupId>net.my.asf</groupId>
+                <artifactId>asf-common</artifactId>
+                <version>${dep.asf.version}</version>
+            </dependency>
+            
             <!-- Google Guice -->
             <dependency>
                 <groupId>com.google.inject</groupId>
@@ -400,6 +434,10 @@
                         <groupId>org.springframework</groupId>
                         <artifactId>spring</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>org.jboss.netty</groupId>
+                        <artifactId>netty</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
@@ -416,6 +454,13 @@
                 <groupId>com.facebook.nifty</groupId>
                 <artifactId>nifty-client</artifactId>
                 <version>${dep.nifty.version}</version>
+            </dependency>
+            
+            <!-- net -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty</artifactId>
+                <version>${dep.netty.version}</version>
             </dependency>
             
             <!-- zk -->
@@ -448,6 +493,44 @@
                 <groupId>org.jodd</groupId>
                 <artifactId>jodd-mail</artifactId>
                 <version>${dep.jodd.version}</version>
+            </dependency>
+            
+            <!-- template -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>${dep.velocity.version}</version>
+            </dependency>
+            
+            <!-- bouncycastle -->
+            <dependency>
+                <groupId>bouncycastle</groupId>
+                <artifactId>bcprov-jdk15</artifactId>
+                <version>${dep.bouncycastle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>bouncycastle</groupId>
+                <artifactId>bcpg-jdk15</artifactId>
+                <version>${dep.bouncycastle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>bouncycastle</groupId>
+                <artifactId>bcmail-jdk15</artifactId>
+                <version>${dep.bouncycastle.version}</version>
+            </dependency>
+            
+            <!-- zip4j -->
+            <dependency>
+                <groupId>net.lingala.zip4j</groupId>
+                <artifactId>zip4j</artifactId>
+                <version>${dep.zip4j.version}</version>
+            </dependency>
+            
+            <!-- store4j -->
+            <dependency>
+                <groupId>com.taobao.store4j</groupId>
+                <artifactId>store4j</artifactId>
+                <version>${dep.store4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
